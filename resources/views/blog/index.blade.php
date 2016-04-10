@@ -16,7 +16,7 @@
                     <h2>
                         <a href="../post/{!! $blog->id !!}">{!! $blog->title !!}</a>
                     </h2>
-                    <p class="lead">
+                    <p >
                         by <a href="../index.php">{!! $author->name!!}</a> |
                         <span class="glyphicon glyphicon-time"></span> {!! $blog->created_at !!}
 

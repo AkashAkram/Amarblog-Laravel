@@ -31,21 +31,6 @@
         body {
             font-family: 'Lato';
         }
-/*
-        .navbar {
-            background-color:#1C5F7F;
-            background-image: none;
-        }
-        .navbar-right > li >a{
-            font-size: small;
-
-        }
-        .navbar-right > li >a:hover{
-
-            background-color: white;
-            color: #0f0f0f;
-        }
-*/
         .fa-btn {
             margin-right: 6px;
         }
@@ -83,10 +68,10 @@
                         <li><a href="{{ url('../login') }}">Login</a></li>
                         <li><a href="{{ url('../register') }}">Register</a></li>
                     @else
-                        <li><a href="{{ url('../create') }}">Create New</a></li>
+                        <li class="create-new"><a href="{{ url('../create') }}">Create New</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                <img src="/images/blog-cover.JPG" alt="" width="30" height="25">
+                                <img src="/images/blog-cover.JPG" alt="" width="20" height="17">
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
 
@@ -129,7 +114,7 @@
                     <h4>Blog Categories</h4>
                     <div class="row height">
                         <div class="col-lg-12">
-                            <ul class="list-unstyled">
+                            <ul class="list-unstyled well-custom-list">
                                 @foreach($categories as $category)
                                     <li><a href="#">{!! $category->name !!}</a></li>
 
