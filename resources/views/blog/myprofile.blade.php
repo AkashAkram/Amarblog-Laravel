@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title')<title>{!! Auth::User()->name !!} | Amar Blog</title>
 
 @section('content')
 

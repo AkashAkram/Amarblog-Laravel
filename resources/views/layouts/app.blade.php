@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Amar Blog</title>
-    @yield('title')
+    <title>@yield('title')Home | Amar Blog</title>
+
 
     <!-- Styles -->
     <link href="/css/bootstrap.css" rel="stylesheet">
@@ -28,9 +28,7 @@
 
     @yield('style')
     <style>
-        body {
-            font-family: 'Lato';
-        }
+
         .fa-btn {
             margin-right: 6px;
         }
