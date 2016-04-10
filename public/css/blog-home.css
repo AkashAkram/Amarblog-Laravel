@@ -1,0 +1,62 @@
+/*!
+ * Start Bootstrap - Blog Home HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.well-custom{
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #1C5F80;
+    border: 0px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 10px 10px rgba(0, 0, 0, .05);
+    color: #ffffff;
+}
+
+.box-padding{
+    padding: 10px 20px;
+}
+
+.well-custom > li > a{
+    font-size: large;
+    color: #04c600;
+    display: block;
+    margin: 0%;
+    padding: 1% 5%;
+    border-bottom: solid 1px #4eb600;
+}
+.well-custom > li > a:hover{
+    background-color: #5e5e5e;
+    color: white;
+    text-decoration: none;
+}
+
+
+.head .btn-close {
+    background-image: url("/images/blog-cover.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    cursor: pointer;
+    display: inline-block;
+    height: 36px;
+    margin-right: 16px;
+    margin-top: 16px;
+    width: 36px;
+}
+.head .btn-close:hover {
+    transform: rotate(270deg);
+}
+
+
