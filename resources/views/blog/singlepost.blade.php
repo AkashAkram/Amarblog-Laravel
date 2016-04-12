@@ -18,10 +18,12 @@
             <h2>
                 <a href="../post/{!! $blog->id !!}">{!! $blog->title !!}</a>
             </h2>
-            <p class="lead">
-                by <a href="../index.php">{!! $author->name!!}</a>
-            </p>
-            <p><span class="glyphicon glyphicon-time"></span> {!! $blog->created_at !!}</p>
+            <p>
+                by <a href="">{!! $author->name!!}</a> | 
+            <span class="glyphicon glyphicon-time"></span> {!! $blog->created_at !!}</p>
+  
+            <hr>
+
             <div align="right">
                 <a class="btn-close hover-animate" href="../"></a>
                 @if(!Auth::guest())
@@ -34,9 +36,11 @@
                 @endif
 
             </div>
-            <hr>
-            <img class="img-responsive " src="../images/{!! $blog->cover !!}" width="900" height="300" alt="">
-            <div class="box-padding">
+            <img class="img-responsive " src="../images/{!! $blog->cover !!}" width="900" height="300" alt=""><br>
+
+
+
+            <div>
                 <p>{!! $blog->body !!}<br></p>
             </div>
 

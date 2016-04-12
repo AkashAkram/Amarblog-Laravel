@@ -127,8 +127,8 @@
 
                 <!-- Side Widget well-custom -->
                 <div class="well-custom">
-                    <h4>Side Widget well-custom</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+                    <h4>Recent Posts</h4>
+                    <p></p>
                 </div>
 
             </div>
@@ -138,7 +138,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; <a href="http://akashakram.xyz">AkashAkram 2016</a></p>
+                    <p>Copyright &copy; <a href="http://akashakram.xyz">AkashAkram  - 2016</a></p>
                 </div>
 
             </div>
