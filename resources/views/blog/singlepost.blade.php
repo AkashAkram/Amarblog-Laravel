@@ -22,7 +22,6 @@
                 by <a href="">{!! $author->name!!}</a> | 
             <span class="glyphicon glyphicon-time"></span> {!! $blog->created_at !!}</p>
   
-            <hr>
 
             <div align="right">
                 <a class="btn-close hover-animate" href="../"></a>

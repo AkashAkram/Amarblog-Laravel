@@ -91,7 +91,7 @@
         @yield('content')
 
                 <!-- Sidebar Widgets-->
-            <div class="col-md-4">
+            <div class="col-md-3">
 
                 <!-- Blog Search well-custom -->
                 <div class="well-custom">
@@ -127,22 +127,14 @@
 
                 <!-- Side Widget well-custom -->
                 <div class="well-custom">
-                    <h4>Recent Posts</h4>
-                    <p></p>
+                    <p><center>Copyright &copy; <a href="http://akashakram.xyz">AkashAkram  - 2016</a></center></p>
                 </div>
 
             </div>
 
 
 
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; <a href="http://akashakram.xyz">AkashAkram  - 2016</a></p>
-                </div>
-
-            </div>
-        </footer>
+      
         </div>
     </div>
 

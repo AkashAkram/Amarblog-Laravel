@@ -23,7 +23,7 @@
 
                         
                     </p>
-                    <hr>
+                    
                     <div align="right">
                                 @if(!Auth::guest())
                                     @if($blog->author_id == Auth::user()->id)
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 @endforeach
-        <div align="right">{!! $blogs->render() !!}</div>
+        <div align="center">{!! $blogs->render() !!}</div>
     </div>          <!-- Pageinate -->
 
 

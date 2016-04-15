@@ -11,9 +11,13 @@ body {
 
 footer {
     text-align: center;
-    margin: 50px 0;
+    margin: 150px 0;
     color: #fff;
+    background: #000;
 
+}
+padding-top{
+    padding-top: 100px;
 }
 
 .well-custom{
