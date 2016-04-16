@@ -15,8 +15,12 @@
 
 
         <div class="well">
+            <div align="right">
+                <a class="btn-close hover-animate" href="../"></a>
+            </div>
             <h2>
                 <a href="../post/{!! $blog->id !!}">{!! $blog->title !!}</a>
+
             </h2>
             <p>
                 by <a href="">{!! $author->name!!}</a> | 
@@ -24,7 +28,7 @@
   
 
             <div align="right">
-                <a class="btn-close hover-animate" href="../"></a>
+
                 @if(!Auth::guest())
                     @if($blog->author_id == Auth::user()->id)
 
@@ -46,4 +50,7 @@
         </div>
 
     </div>
+
+
+
 @endsection

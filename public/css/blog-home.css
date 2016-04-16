@@ -25,11 +25,8 @@ padding-top{
     min-height: 20px;
     padding: 19px;
     margin-bottom: 20px;
-    background-color: #9148B1;
-    border: 0px solid #e3e3e3;
+    background-color: #704CAF;
     border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-    box-shadow: inset 0 10px 10px rgba(0, 0, 0, .05);
     color: #ffffff;
 }
 
@@ -52,23 +49,22 @@ padding-top{
 }
 
 
-.head .btn-close {
-    background-image: url("/images/blog-cover.JPG");
+.btn-close {
+    background-image: url("/buttons/greencross2.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
     cursor: pointer;
     display: inline-block;
-    height: 36px;
-    margin-right: 16px;
+    height: 30px;
+    margin-left: 30px;
+
     margin-top: 16px;
     width: 36px;
 }
-.head .btn-close:hover {
-    transform: rotate(270deg);
+.btn-close:hover {
+    transform: rotate(45deg);
 }
-.create-new{
-    color: #7A217F;
 
-}
+
 
