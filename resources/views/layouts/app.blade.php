@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@yield('title')Home | Amar Blog</title>
+    @yield('title')
 
 
     <!-- Styles -->
     <link href="/css/bootstrap.css" rel="stylesheet">
 
     <link href="/css/blog-home.css" rel="stylesheet">
-    <link href="/css/hover.css" rel="stylesheet">
-
+    <link href="/css/default-theme.css" rel="stylesheet">
+<!--
+  <link href="/css/default-theme.css" rel="stylesheet">
+    <link href="/css/light-theme.css" rel="stylesheet">
+-->
 
     <!-- Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
@@ -35,7 +38,7 @@
     </style>
 </head>
 <body id="app-layout">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-akash navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
 
@@ -110,19 +113,18 @@
                 <!-- Blog Categories well-custom-custom -->
                 <div class="well-custom">
                     <h4>Blog Categories</h4>
-                    <div class="row height">
-                        <div class="col-lg-12">
+
+
                             <ul class="list-unstyled well-custom-list">
                                 @foreach($categories as $category)
                                     <li><a href="#">{!! $category->name !!}</a></li>
 
                                 @endforeach
                             </ul>
-                        </div>
+
                         <!-- /.col-lg-6 -->
 
-                    </div>
-                    <!-- /.row -->
+
                 </div>
 
                 <!-- Side Widget well-custom -->

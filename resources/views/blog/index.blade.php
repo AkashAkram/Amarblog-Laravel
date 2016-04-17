@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+<title>Home :: Amar Blog</title>
 
 @section('content')
 
@@ -37,15 +38,15 @@
                    </div>
                         
                     <a href="post/{!! $blog->id !!}">
-                        <img class="img-responsive " src="images/{!! $blog->cover !!}" width="900" height="300" alt="">
+                        <img class="img-responsive my-image " src="images/{!! $blog->cover !!}" alt="">
                     </a>
 
-                <div>
+
                     <br>
-                        <p>{!! substr($blog->body,0,550) !!}<br><br>
+                        <p class="well-p">{!! substr($blog->body,0,550) !!}<br><br>
                             <a class="btn btn-primary" href="../post/{!! $blog->id !!}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </div>
-                </div>
+
                 @endforeach
         <div align="center">{!! $blogs->render() !!}</div>
     </div>          <!-- Pageinate -->

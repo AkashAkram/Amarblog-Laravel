@@ -1,53 +1,43 @@
-/*!
- * Start Bootstrap - Blog Home HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 
-body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: #473368;
-}
-
-footer {
-    text-align: center;
-    margin: 150px 0;
-    color: #fff;
-    background: #000;
+.row {
+    border: none;
+    margin: 0px 5px;
+    padding: 20px;
 
 }
-padding-top{
-    padding-top: 100px;
+
+a {
+    background-color: transparent;
+    color: lime;
 }
 
-.well-custom{
 
+a:active,
+a:hover {
+    outline: 0;
+    color: #dddddd;
+    text-decoration: none;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+
+.well {
     min-height: 20px;
     padding: 19px;
     margin-bottom: 20px;
-    background-color: #704CAF;
+    background-color: transparent;
+    color: #dddddd;
+    border: 0px solid #e3e3e3;
     border-radius: 4px;
-    color: #ffffff;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
 }
 
-.box-padding{
-    padding: 10px 20px;
+p.well-p{
+    line-height: 200%;
 }
-
-.well-custom-list a{
-    font-size: medium;
-    color: #fff;
-    display: block;
-    margin: 0px;
-    padding: 1% 5%;
-    border-bottom: solid 1px #fff;
-}
-.well-custom-list a:hover{
-    background-color: #473368;
-    color: white;
-    text-decoration: none;
-}
-
 
 .btn-close {
     background-image: url("/buttons/greencross2.svg");
@@ -70,4 +60,3 @@ padding-top{
     cursor: hand;
     transition: 0.5s;
 }
-

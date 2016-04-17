@@ -34,7 +34,7 @@
 
                         <a href="../edit/post/{!! $blog->id !!}">update</a> |
                         <a href="../remove/post/{!! $blog->id !!}">Delete</a>
-                        <hr>
+
                     @endif
                 @endif
 
@@ -43,9 +43,9 @@
 
 
 
-            <div>
-                <p>{!! $blog->body !!}<br></p>
-            </div>
+
+                <p class="well-p">{!! $blog->body !!}<br></p>
+
 
         </div>
 
