@@ -29,7 +29,6 @@
     color: lime;
     font-family: "Comic Sans MS";
     font-weight: bold;
-    border-bottom: solid 5px #dddddd;
 }
 .navbar-akash .navbar-nav > li > a:hover,
 .navbar-akash .navbar-nav > li > a:focus {
