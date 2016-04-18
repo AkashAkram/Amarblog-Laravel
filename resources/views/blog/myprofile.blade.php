@@ -32,7 +32,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label">Password</label>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" value="{!! $user->password !!}" name="title">
+                                <input type="text" class="form-control" value="{!!bcrypt( $user->password )!!}" name="title">
                             </div>
                         </div>
 

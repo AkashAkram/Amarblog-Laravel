@@ -36,8 +36,8 @@ Route::controllers([
 
 Route::auth();
 
-*/
 
+*/
 
 
 

@@ -5,22 +5,24 @@
 
 
 .navbar-akash {
-    background-color: #6F6F6F;
+    background-color: #337ab7;
     border: none;
+    opacity: 0.9;
+    box-shadow: 0px 0px 00px #000000;
 }
 .navbar-akash .navbar-brand {
-    font-family: "Comic Sans MS";
-    font-style: italic;
+    font-family: Helvetica,Arial,sans-serif;
+    
     color: #ffffff;
     background-color: transparent;
-    border-bottom: solid 5px limegreen;
+
 }
 .navbar-akash .navbar-brand:hover,
 .navbar-akash .navbar-brand:focus {
-    color: #dddddd;
+    color: #000000;
     background-color: transparent;
     background-color: transparent;
-    border-bottom: solid 5px #ffffff;
+    border-bottom: solid 5px limegreen;
 }
 .navbar-akash .navbar-text {
     color: orangered;
@@ -32,7 +34,7 @@
 }
 .navbar-akash .navbar-nav > li > a:hover,
 .navbar-akash .navbar-nav > li > a:focus {
-    color: #fff;
+    color: #000000;
     background-color: transparent;
     border-bottom: solid 5px limegreen;
 
@@ -128,11 +130,11 @@ fieldset[disabled] .navbar-akash .btn-link:focus {
 body {
     margin: 0px;
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: #DFDFDF;
+    background-color: #EFEFEF;
 }
 a{
-    font-family: "Comic Sans MS";
-    color: limegreen;
+    font-family: Helvetica,Arial,sans-serif;
+    color: #407ECF;
 }
 a:hover{
     color: #6F6F6F;
@@ -140,7 +142,7 @@ a:hover{
 .well{
     color: #000000;
     background-color: #ffffff;
-    box-shadow: 0px 0px 20px grey;
+    box-shadow: 0px 0px 10px grey;
     padding-left: 35px;
     padding-right: 35px;
 }
@@ -150,17 +152,17 @@ a:hover{
 
     padding: 15px;
     margin-bottom: 20px;
-    background-color: #6F6F6F;
+    background-color: #ffffff;
     border-radius: 4px;
-    box-shadow: 0px 0px 20px grey;
-    color: #ffffff;
+    box-shadow: 0px 0px 10px grey;
+    color: #000000;
 }
 
 
 
 .well-custom-list a{
     font-size: medium;
-    color: #ffffff;
+    color: #000000;
     display: block;
 
     margin-left: 20px;
@@ -168,7 +170,7 @@ a:hover{
     border-bottom: solid 0.5px #C29FFF;
 }
 .well-custom-list a:hover{
-    background-color: #473368;
+    background-color: #999;
     color: white;
     text-decoration: none;
 }

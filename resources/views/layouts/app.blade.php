@@ -12,7 +12,7 @@
     <link href="/css/bootstrap.css" rel="stylesheet">
 
     <link href="/css/blog-home.css" rel="stylesheet">
-    <link href="/css/light-theme.css" rel="stylesheet">
+    <link href="/css/default-theme.css" rel="stylesheet">
 <!--
   <link href="/css/default-theme.css" rel="stylesheet">
     <link href="/css/light-theme.css" rel="stylesheet">
@@ -129,7 +129,8 @@
 
                 <!-- Side Widget well-custom -->
                 <div class="">
-                    <p><center>Copyright &copy; <a href="http://akashakram.xyz"><b>Akash Akram - 2016</b></a></center></p>
+                    <br>
+                    <p><center> <a href="http://akashakram.xyz"><b>Akash Akram &copy; 2016</b></a></center></p>
                 </div>
 
             </div>

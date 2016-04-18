@@ -4,7 +4,7 @@
 /* - Navbar-1    */
 .navbar-akash {
     background-color: #2B2F32;
-
+    opacity: 0.7;
     border: none;
     box-shadow: 0px 0px 20px #2B2F32;
 }
@@ -121,7 +121,9 @@ body {
     background-color: #3B3F42;
 }
 
-
+.well{
+    box-shadow: 0px 0px 10px #000000;
+}
 
 .well-custom{
 

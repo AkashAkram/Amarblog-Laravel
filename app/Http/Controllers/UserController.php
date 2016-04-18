@@ -6,14 +6,13 @@ use Illuminate\Support\Facades\Auth;
 use App\Article;
 use App\Category;
 use App\Http\Requests;
-//use Illuminate\Http\Request;
-use Request;
+use Illuminate\Http\Request;
+//use Request;
 use Illuminate\Support\Facades\DB;
 use PhpParser\Node\Expr\New_;
 //use Illuminate\Foundation\Validator;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Input;
-
 
 class UserController extends Controller
 {
@@ -59,7 +58,7 @@ class UserController extends Controller
         } else {
 
             // validation not successful, send back to form
-            return Redirect::to('login');
+            return Redirect('login');
 
         }
     }
@@ -84,15 +83,62 @@ class UserController extends Controller
             return redirect('/');
     }
 
-    public function postregister()
+    public function postregister(Request $request)
     {
-        if(Auth::guest())
-        {
-            $categories = Category::all();
-            return view('auth.register',compact('categories'));
+
+ 
+
+         $rules = array(
+            'name' => 'required|max:255|unique:users',
+            'email'    => 'required|email|max:255|unique:users',
+            'password' => 'required|min:6|confirmed'
+        );
+
+       
+        // $validator = $this->validator($request->all());
+          $validator = Validator::make($request->all(), $rules);
+
+   
+        if ($validator->fails()) {
+            return Redirect('register')
+                ->withErrors($validator)// send back all errors to the login form
+                ->withInput(Input::except('password'));
         }
-        else
+     else {
+
+           
+           /* $userdata = array(
+                'name' => Input::get('name'),
+                'email' => Input::get('email'),
+                'password' => bcrypt(Input::get('password'))
+            );
+            */
+
+            $user = new User();
+
+            $user->name = Input::get('name');
+            $user->email = Input::get('email');
+            $user->password = bcrypt(Input::get('password'));
+
+
+        }
+       // User::create($userdata);
+            $user->save();
+            Auth::login($user);
             return redirect('/');
+
+       /* 
+       if (Auth::attempt($userdata)) {
+
+            return redirect('/');
+
+        } else {
+
+            // validation not successful, send back to form
+            return Redirect('register');
+
+        }
+        */
     }
 
 
