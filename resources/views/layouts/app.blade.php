@@ -12,7 +12,7 @@
     <link href="/css/bootstrap.css" rel="stylesheet">
 
     <link href="/css/blog-home.css" rel="stylesheet">
-    <link href="/css/default-theme.css" rel="stylesheet">
+    <link href="/css/light-theme.css" rel="stylesheet">
 <!--
   <link href="/css/default-theme.css" rel="stylesheet">
     <link href="/css/light-theme.css" rel="stylesheet">
@@ -69,7 +69,7 @@
                         <li><a href="{{ url('../login') }}">Login</a></li>
                         <li><a href="{{ url('../register') }}">Register</a></li>
                     @else
-                        <li class="create-new"><a href="{{ url('../create') }}">Create New</a></li>
+                        <li class=" "><a href="{{ url('../create') }}">Create New</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 <img src="/images/blog-cover.JPG" alt="" width="20" height="17">
@@ -128,8 +128,8 @@
                 </div>
 
                 <!-- Side Widget well-custom -->
-                <div class="well-custom">
-                    <p><center>Copyright &copy; <a href="http://akashakram.xyz">AkashAkram  - 2016</a></center></p>
+                <div class="">
+                    <p><center>Copyright &copy; <a href="http://akashakram.xyz"><b>Akash Akram - 2016</b></a></center></p>
                 </div>
 
             </div>

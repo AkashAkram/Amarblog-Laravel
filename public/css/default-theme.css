@@ -5,7 +5,7 @@
 
 
 .navbar-akash {
-    background-color: #704CAF;
+    background-color: #64459F;
     border: none;
 }
 .navbar-akash .navbar-brand {
@@ -128,7 +128,7 @@ fieldset[disabled] .navbar-akash .btn-link:focus {
 body {
     margin: 0px;
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: #473368;
+    background-color: #33224F;
 }
 
 
@@ -138,9 +138,9 @@ body {
 
     padding: 15px;
     margin-bottom: 20px;
-    background-color: #704CAF;
+    background-color: #64459F;
     border-radius: 4px;
-    box-shadow: 0px 0px 20px #2B2F32;
+    box-shadow: 0px 0px 20px #000000;
     color: #dddddd;
 }
 
