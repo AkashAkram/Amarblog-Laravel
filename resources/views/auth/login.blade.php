@@ -52,9 +52,10 @@
                                     <button type="submit" class="btn btn-primary">
                                         <i class="fa fa-btn fa-sign-in"></i>Login
                                     </button>
-
+                                    <span class="Password_recovery"><a href="/password_recovery">Forgot Password ?</a></span>
                                 </div>
                             </div>
+
                         </form>
                     </div>
                 </div>

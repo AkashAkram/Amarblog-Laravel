@@ -7,26 +7,27 @@
 .navbar-akash {
     background-color: #64459F;
     border: none;
-    opacity: 0.8;
+    opacity: 0.9;
     box-shadow: 0px 0px 20px #000000;
 }
 .navbar-akash .navbar-brand {
     font-family: "Comic Sans MS";;
-    color: lime;
+    color: #ffffff;
     background-color: transparent;
+    font-weight: bold;
  
 }
 .navbar-akash .navbar-brand:hover,
 .navbar-akash .navbar-brand:focus {
     color: #ffffff;
     background-color: transparent;
-    border-bottom: solid 5px lime;
+    border-bottom: solid 5px #8FCDFF;
 }
 .navbar-akash .navbar-text {
     color: orangered;
 }
 .navbar-akash .navbar-nav > li > a {
-    color: lime;
+    color: #ffffff;
     font-family: "Comic Sans MS";
     font-weight: bold;
 }
@@ -34,7 +35,7 @@
 .navbar-akash .navbar-nav > li > a:focus {
     color: #ffffff;
     background-color: transparent;
-    border-bottom: solid 5px lime;
+    border-bottom: solid 5px #8FCDFF;
 
 }
 .navbar-akash .navbar-nav > .active > a,
@@ -131,6 +132,15 @@ body {
     background-color: #33224F;
 }
 
+a{
+    font-family: Helvetica,Arial,sans-serif;
+    color: #8FCDFF;
+}
+a:hover{
+    color: #ffffff;
+}
+
+
 .well{
     box-shadow: 0px 0px 10px #000000;
 }
@@ -139,7 +149,7 @@ body {
 
     padding: 15px;
     margin-bottom: 20px;
-    background-color: #4A2F7F;
+    background-color: #3E226F;
     border-radius: 4px;
     box-shadow: 0px 0px 10px #000000;
     color: #ffffff;
@@ -157,8 +167,8 @@ body {
     border-bottom: solid 0.5px #C29FFF;
 }
 .well-custom-list a:hover{
-    background-color: #473368;
-    color: white;
+    background-color: #8FCDFF;
+    color: #000000;
     text-decoration: none;
 }
 

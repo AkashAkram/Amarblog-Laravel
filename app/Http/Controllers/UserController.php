@@ -6,8 +6,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Article;
 use App\Category;
 use App\Http\Requests;
-use Illuminate\Http\Request;
-//use Request;
+//use Illuminate\Http\Request;
+use Request;
 use Illuminate\Support\Facades\DB;
 use PhpParser\Node\Expr\New_;
 //use Illuminate\Foundation\Validator;
@@ -140,6 +140,67 @@ class UserController extends Controller
         }
         */
     }
+
+
+
+
+
+  public function show_profile($id)
+    {
+        $this->middleware('auth');
+        $user = User::select()->where('id',$id)->first();
+        $categories = Category::all();
+        return view('blog.myprofile',compact('user','categories'));
+    }
+
+    public function update_profile($id)
+    {
+        $this->middleware('auth');
+
+       
+           /*$data = new User();
+           $data->name = Request::input('name');
+           $data->email = Request::input('email');
+           $data->password = Request::input('password');
+
+           $update_data = User::find($id);
+
+            $update_data->name = $data->name;
+            $update_data->email = $data->email;
+            $update_data->password = $data->password;
+           $update_data->save();
+           
+           $user = User::select()->where('id',$id)->first();
+           $user->fill(Request::all());
+           $user->save();
+*/
+               // $user = new User();
+               // $user->name = Input::get('name');
+               // $user->email = Input::get('email');
+               // $user->password = Input::get('password');
+           if(isset($_POST['updateprofile']))
+           {
+
+                $data = Request::all();
+                $update_data = User::find($id);
+                $update_data->update($data);
+
+           }
+
+           return redirect('/');
+ 
+
+
+    }
+
+
+    public function password_recovery()
+    {
+       //$user = User::Select()
+    }
+
+
+
 
 
 }

@@ -1,4 +1,5 @@
 <?php
+use App\Category;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,14 +20,18 @@ Route::get('/', 'HomeController@index');
 Route::get('home', 'HomeController@index');
 
 Route::post('/', 'HomeController@post');
+
 Route::get('/create', 'HomeController@create');
+
 Route::get('/post/{postid}', 'HomeController@singlepost');
+
 Route::get('/myblog', 'HomeController@myblog');
+
 Route::get('/remove/post/{postid}', 'HomeController@removepost');
+
 Route::get('/edit/post/{sdjij}', 'HomeController@editpost');
 Route::post('/update/post/{postid}', 'HomeController@updatepost');
-Route::get('/myprofile/{userid}', 'HomeController@showprofile');
-Route::post('/myprofile/{userid}', 'HomeController@updateprofile');
+
 /*
 Route::controllers([
     'auth' => 'Auth\AuthController',
@@ -43,6 +48,12 @@ Route::auth();
 
 //         Authenticate user Controller      //
 
+
+Route::get('/myprofile/{userid}', 'UserController@show_profile');
+Route::post('/myprofile/{userid}', 'UserController@update_profile');
+
+
+
 Route::get('/login', 'UserController@getlogin');
 Route::post('/login', 'UserController@postlogin');
 
@@ -52,3 +63,10 @@ Route::post('/register', 'UserController@postregister');
 Route::get('/logout', 'UserController@logout');
 
 
+Route::get('/password_recovery', function(){
+	$categories = Category::all();
+	return view('auth.passwords.reset',compact('categories'));
+});
+
+
+Route::post('/password_recovery','UserController@password_recovery');

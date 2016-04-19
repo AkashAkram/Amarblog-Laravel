@@ -41,7 +41,7 @@ p.well-p{
 }
 
 .btn-close {
-    background-image: url("/buttons/greencross2.svg");
+    background-image: url("/buttons/bluecross.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -60,4 +60,12 @@ p.well-p{
 .hover-animate {
     cursor: hand;
     transition: 0.5s;
+}
+
+
+
+
+.Password_recovery a{
+    color: blue;
+
 }

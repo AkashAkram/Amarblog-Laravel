@@ -212,43 +212,7 @@ class HomeController extends Controller
     }
 
 
-    public function showprofile($id)
-    {
-        $this->middleware('auth');
-        $user = User::select()->where('id',$id)->first();
-        $categories = Category::all();
-        return view('blog.myprofile',compact('user','categories'));
-    }
-
-    public function updateprofile($id)
-    {
-        $this->middleware('auth');
-       if(isset($_POST['updateprofile']))
-       {
-           /*$data = new User();
-           $data->name = Request::input('name');
-           $data->email = Request::input('email');
-           $data->password = Request::input('password');
-
-           $update_data = User::find($id);
-
-            $update_data->name = $data->name;
-            $update_data->email = $data->email;
-            $update_data->password = $data->password;
-           $update_data->save();
-           */
-           $user = User::where('id',$id)->firstOrFail();
-           $user->fill(Request::all());
-           $user->save();
-
-           return redirect('/');
-       }
-        else
-            echo "error";
-
-
-
-    }
+  
 
 
 }
