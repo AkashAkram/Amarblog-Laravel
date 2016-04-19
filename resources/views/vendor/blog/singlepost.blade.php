@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
+
 @section('title')
-    {!! $blog->title !!}
+{!! $blog->title !!}
 @endsection
+
 
 
 @section('content')

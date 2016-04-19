@@ -1,5 +1,7 @@
 @extends('layouts.app')
-@section('title')<title>Create | Amar Blog</title>
+@section('title')
+    New Post
+@endsection
 @section('style')
     <style type="text/css">
         .post{

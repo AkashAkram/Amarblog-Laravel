@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+
+@section('title')
+Login
+@endsection
+
+
 @section('content')
 
     <div class="col-md-8">

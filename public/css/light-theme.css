@@ -7,11 +7,11 @@
 .navbar-akash {
     background-color: #337ab7;
     border: none;
-    opacity: 0.9;
+    opacity: 0.7;
     box-shadow: 0px 0px 00px #000000;
 }
 .navbar-akash .navbar-brand {
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: verdana;
     font-weight: bold;
     color: #ffffff;
     background-color: transparent;
@@ -19,24 +19,24 @@
 }
 .navbar-akash .navbar-brand:hover,
 .navbar-akash .navbar-brand:focus {
-    color: #000000;
+    color: #ffffff;
     background-color: transparent;
     background-color: transparent;
-    border-bottom: solid 5px limegreen;
+    border-bottom: solid 5px #ffffff;
 }
 .navbar-akash .navbar-text {
     color: orangered;
 }
 .navbar-akash .navbar-nav > li > a {
     color: #ffffff;
-    font-family: "Comic Sans MS";
+    font-family: verdana;
     font-weight: bold;
 }
 .navbar-akash .navbar-nav > li > a:hover,
 .navbar-akash .navbar-nav > li > a:focus {
-    color: #000000;
+    color: #ffffff;
     background-color: transparent;
-    border-bottom: solid 5px limegreen;
+    border-bottom: solid 5px #ffffff;
 
 }
 .navbar-akash .navbar-nav > .active > a,
@@ -131,7 +131,7 @@ body {
     margin: 0px;
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     
-    background-image: url('/images/light-bg.jpg');
+    background-image: url('/images/light-bg5.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -157,7 +157,7 @@ a:hover{
 
     padding: 15px;
     margin-bottom: 20px;
-    background-color: #DBE6E2;
+    background-color: #B5CFC2;
     border-radius: 4px;
     box-shadow: 0px 0px 10px grey;
     color: #4485BB;

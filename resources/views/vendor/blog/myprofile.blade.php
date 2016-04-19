@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('title')
-{!! Auth::User()->name !!}
+{!! Auth::User()->name !!} 
 @endsection
+
 @section('content')
 
 

@@ -1,10 +1,4 @@
 @extends('layouts.app')
-
-@section('title')
-    Update post
-@endsection
-
-
 @section('title')
     <style type="text/css">
         .post{
@@ -13,6 +7,13 @@
         }
     </style>
 @endsection
+
+@section('title')
+Update post
+@endsection
+
+
+
 @section('content')
 
             <div class="col-md-8">
