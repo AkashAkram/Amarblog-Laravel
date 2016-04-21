@@ -37,7 +37,7 @@ class UserController extends Controller
         $validator = Validator::make(Input::all(), $rules);
 
         if ($validator->fails()) {
-            return Redirect::to('login')
+            return Redirect('login')
                 ->withErrors($validator)// send back all errors to the login form
                 ->withInput(Input::except('password'));
         }
@@ -83,25 +83,25 @@ class UserController extends Controller
             return redirect('/');
     }
 
-    public function postregister(Request $request)
+    public function postregister()
     {
 
  
 
          $rules = array(
-            'name' => 'required|max:255|unique:users',
+            'name' =>     'required|max:255|unique:users',
             'email'    => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed'
         );
 
        
         // $validator = $this->validator($request->all());
-          $validator = Validator::make($request->all(), $rules);
+          $validator = Validator::make(Input::all(), $rules);
 
    
         if ($validator->fails()) {
             return Redirect('register')
-                ->withErrors($validator)// send back all errors to the login form
+                ->withErrors($validator)// send back all errors to the reg form
                 ->withInput(Input::except('password'));
         }
      else {
@@ -181,15 +181,12 @@ class UserController extends Controller
            if(isset($_POST['updateprofile']))
            {
 
-                $data = Request::all();
+                $data = Input::all();
                 $update_data = User::find($id);
                 $update_data->update($data);
+                return redirect('/');
 
            }
-
-           return redirect('/');
- 
-
 
     }
 
