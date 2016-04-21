@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@yield('title') :: Amar Blog</title>
+    <title>@yield('title') :: আমার ব্লগ</title>
 
 
     <!-- Styles -->
     <link href="/css/bootstrap.css" rel="stylesheet">
 
     <link href="/css/blog-home.css" rel="stylesheet">
+    
     <link href="/css/light-theme.css" rel="stylesheet">
 <!--
   <link href="/css/default-theme.css" rel="stylesheet">
@@ -54,7 +55,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Amar Blog
+                    আমার ব্লগ
                 </a>
             </div>
 
