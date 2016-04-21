@@ -5262,6 +5262,11 @@ button.list-group-item-danger.active:focus {
   margin-bottom: 0;
   line-height: 1.3;
 }
+
+        .fa-btn {
+            margin-right: 6px;
+        }
+
 .panel {
   margin-top: 100px;
   margin-bottom: 20px;

@@ -12,7 +12,7 @@
     <link href="/css/bootstrap.css" rel="stylesheet">
 
     <link href="/css/blog-home.css" rel="stylesheet">
-    
+
     <link href="/css/light-theme.css" rel="stylesheet">
 <!--
   <link href="/css/default-theme.css" rel="stylesheet">
@@ -33,9 +33,8 @@
     @yield('style')
     <style>
 
-        .fa-btn {
-            margin-right: 6px;
-        }
+
+
     </style>
 </head>
 <body id="app-layout">
@@ -55,7 +54,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    আমার ব্লগ
+                <img class="nav-img" src="images/amarblog5.png" alt="" height="35px" width="60px;">  আমার ব্লগ
                 </a>
             </div>
 

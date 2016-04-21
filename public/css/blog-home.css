@@ -23,6 +23,14 @@ abbr[title] {
 }
 
 
+        .nav-img{
+            float: left;
+            padding-top: 0px;
+            margin-top: -10px;
+            margin-right: 10px;
+        }
+
+
 .well {
     min-height: 20px;
     padding: 19px;
