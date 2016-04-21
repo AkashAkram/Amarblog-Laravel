@@ -30,7 +30,7 @@
 .navbar-akash .navbar-nav > li > a {
     color: #ffffff;
     font-family: verdana;
-    font-weight: bold;
+    
 }
 .navbar-akash .navbar-nav > li > a:hover,
 .navbar-akash .navbar-nav > li > a:focus {
@@ -161,6 +161,7 @@ a:hover{
     background-color: #transparent;
     border-radius: 4px;
     box-shadow: 0px 0px 10px grey;
+    font-family: verdana;
     color: #4485BB;
 }
 
